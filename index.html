@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Curations by Neenu Sara</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Brush+Script+MT&family=Playfair+Display:wght@700&family=Dancing+Script:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- Header -->
+<header>
+  <div class="header-overlay">
+  </div>
+  <!-- Delivery Info Banner -->
+<div class="delivery-banner">
+  <p>🚚On Orders $150 and above – Free Delivery around GTA / London / KWC locations!</p>
+</div>
+
+  <nav>
+    <ul>
+      <li><a href="#shop">Shop Gifts</a></li>
+      <li><a href="#birthdays">Birthdays</a></li>
+      <li><a href="#luxury">Luxury Boxes</a></li>
+      <li><a href="#occasions">Occasions</a></li>
+      <li><a href="#gallery">Our Creations</a></li>
+      <li><a href="#about">About Us</a></li>
+      <li><a href="#place-order">Place Order</a></li>
+    </ul>
+  </nav>
+</header>
+
+<!-- Shop Gifts Section -->
+<section id="shop">
+  <h2>Shop Gifts</h2>
+  <p>Explore our curated gift selections for every occasion.</p>
+  <div class="gift-grid">
+    <div class="gift-item" data-hamper="Gift Set" onclick="openOrderForm(this)">
+      <img src="images/gift1.jpg" alt="Gift Set">
+      <h3>Gift Set</h3>
+      <p>$100</p>
+    </div>
+    <div class="gift-item" data-hamper="Chocolate Box" onclick="openOrderForm(this)">
+      <img src="images/gift2.JPG" alt="Chocolate Box">
+      <h3>Chocolate Box</h3>
+      <p>$50</p>
+    </div>
+    <div class="gift-item" data-hamper="Gift Box" onclick="openOrderForm(this)">
+      <img src="images/gift3.JPG" alt="Gift Box">
+      <h3>Gift Box</h3>
+      <p>$25</p>
+    </div>
+  </div>
+</section>
+
+<!-- Birthdays Section -->
+<section id="birthdays">
+  <h2>Birthdays</h2>
+  <p>Perfect gifts to celebrate birthdays in style.</p>
+  <div class="gift-grid">
+    <div class="gift-item" data-hamper="Birthday Box" onclick="openOrderForm(this)">
+      <img src="images/bday1.JPG" alt="Birthday Box">
+      <h3>Birthday Box</h3>
+      <p>Includes customization options</p>
+    </div>
+    <div class="gift-item" data-hamper="Customized Gift Bouquet" onclick="openOrderForm(this)">
+      <img src="images/bday2.JPG" alt="Customized Gift Bouquet">
+      <h3>Customized Gift Bouquet</h3>
+      <p>Make your loved one smile!</p>
+    </div>
+  </div>
+</section>
+
+<!-- Luxury Boxes Section -->
+<section id="luxury">
+  <h2>Luxury Boxes</h2>
+  <p>Premium curated boxes for a luxurious experience.</p>
+  <div class="gift-grid">
+    <div class="gift-item" data-hamper="Deluxe Spa Box" onclick="openOrderForm(this)">
+      <img src="images/luxury1.JPG" alt="Deluxe Spa Box">
+      <h3>Deluxe Spa Box</h3>
+      <p>Relaxing spa essentials for pampering.</p>
+    </div>
+    <div class="gift-item" data-hamper="Gourmet Treats Box" onclick="openOrderForm(this)">
+      <img src="images/luxury2.JPG" alt="Gourmet Treats Box">
+      <h3>Gourmet Treats Box</h3>
+      <p>Fine chocolates and delicacies.</p>
+    </div>
+    <div class="gift-item" data-hamper="Signature Collection" onclick="openOrderForm(this)">
+      <img src="images/luxury3.JPG" alt="Signature Collection">
+      <h3>Signature Collection</h3>
+      <p>Exclusive curated luxury items.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Occasions Section -->
+<section id="occasions">
+  <h2>Occasions</h2>
+  <p>Gifts for weddings, anniversaries, and special celebrations.</p>
+  <div class="gift-grid">
+    <div class="gift-item" data-hamper="Wedding Delight Box" onclick="openOrderForm(this)">
+      <img src="images/occasion3.JPG" alt="Wedding Delight Box">
+      <h3>Wedding Delight Box</h3>
+      <p>Elegant gifts for newlyweds.</p>
+    </div>
+    <div class="gift-item" data-hamper="Anniversary Special" onclick="openOrderForm(this)">
+      <img src="images/occasio2.JPG" alt="Anniversary Special">
+      <h3>Anniversary Special</h3>
+      <p>Celebrate love with luxury gifts.</p>
+    </div>
+    <div class="gift-item" data-hamper="Festive Cheer Box" onclick="openOrderForm(this)">
+      <img src="images/occasion1.JPG" alt="Festive Cheer Box">
+      <h3>Festive Cheer Box</h3>
+      <p>Perfect for holidays and festivals.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Our Creations Section -->
+<section id="gallery">
+  <h2>Our Creations</h2>
+  <p>Click any hamper to order directly 💝</p>
+  <div class="gallery-scroll">
+    <div class="gallery-item" data-hamper="Bride to Be Hamper" onclick="openOrderForm(this)">
+      <img src="images/creation1.jpg" alt="Bride to Be Hamper">
+      <p>Bride to Be Hamper</p>
+    </div>
+    <div class="gallery-item" data-hamper="Customized Birthday Gift" onclick="openOrderForm(this)">
+      <img src="images/creation2.jpg" alt="Customized Birthday Gift">
+      <p>Customized Birthday Gift</p>
+    </div>
+    <div class="gallery-item" data-hamper="Sister Gift Basket" onclick="openOrderForm(this)">
+      <img src="images/creation3.jpg" alt="Sister Gift Basket">
+      <p>Sister Gift Basket</p>
+    </div>
+    <div class="gallery-item" data-hamper="Thanksgiving Basket" onclick="openOrderForm(this)">
+      <img src="images/creation4.JPG" alt="Thanksgiving Basket">
+      <p>Thanksgiving Basket</p>
+    </div>
+    <div class="gallery-item" data-hamper="Luxury Gift Basket" onclick="openOrderForm(this)">
+      <img src="images/creation5.jpg" alt="Luxury Gift Basket">
+      <p>Luxury Gift Basket</p>
+    </div>
+  </div>
+</section>
+<!-- Follow Us on Instagram -->
+<section id="instagram" class="instagram-section">
+  <h2>JOIN US ON INSTAGRAM</h2>
+  <p>Stay updated with new collections, offers, and gift inspirations!</p>
+  <a href="https://www.instagram.com/curations_._" target="_blank" class="insta-btn">@curations_._</a>
+</section>
+
+<!-- About Us Section -->
+  <section id="about">
+    <h2>About Us</h2>
+    <p class="about-text">
+      'Curations' by Neenu Sara is all about creating memorable gift experiences. 
+      We specialize in curated gifts for every occasion, combining elegance, personalization, and love. 
+      Our goal is to make gifting effortless and extraordinary. From birthdays to anniversaries, 
+      Christmas to Thanksgiving — we've got you covered!
+    </p>
+  </section>
+
+
+<!-- Customer Reviews -->
+<section id="reviews" class="reviews-section">
+  <h2>✨ What Our Customers Say</h2>
+  <div class="review-cards">
+    <div class="review-card">
+      <p>"The hamper was beautifully curated and delivered right on time! Loved it!" – Priya</p>
+    </div>
+    <div class="review-card">
+      <p>"Perfect birthday gift for my boyfriend. Thank you, Curations!" – Neenu</p>
+    </div>
+    <div class="review-card">
+      <p>"Amazing customization options and service. Highly recommend!" – Anumon</p>
+    </div>
+  </div>
+</section>
+
+<!-- Coming Soon Christmas Preorders -->
+<section id="coming-soon" class="coming-soon-section">
+  <h2> Coming Soon: Diwali gifts & Christmas Wreaths!</h2>
+  <p>Pre-orders now. Reserve your festive gifts today and make moments unforgettable! 🎁✨ </p>
+</section>
+
+
+<!-- Place Your Order Section -->
+<section id="place-order" class="place-order">
+  <h2>Place Your Order</h2>
+  <form id="orderForm" action="https://formspree.io/f/xpwyylva" method="POST">
+    <label for="hamper">Selected Hamper:</label>
+    <input type="text" id="hamper" name="hamper" readonly>
+    <label for="name">Full Name:</label>
+    <input type="text" id="name" name="name" placeholder="enter your name"required>
+    <label for="phone">Phone Number:</label>
+    <input type="tel" id="phone" name="phone"placeholder="enter your phone number" required>
+    <label for="location">Delivery Address:</label>
+    <textarea id="location" name="location" required></textarea>
+    <label for="deliveryDate">Preferred Delivery Date:</label>
+    <input type="date" id="deliveryDate" name="deliveryDate" required>
+    <label for="custom">Custom Preferences / Notes:</label>
+    <textarea id="custom" name="custom" placeholder="Each hamper is uniquely made — tell us how you’d like yours customized, your budget, and any special instructions..."></textarea>
+    <button type="submit">Submit Order</button>
+  </form>
+  <div id="thankYouMessage" class="thank-you-message" style="display:none;">
+    <h3>🎀 Thank you for placing your order!</h3>
+    <p>We’ve received your request. You’ll get a confirmation shortly via email or call. 💌</p>
+  </div>
+</section>
+
+
+
+
+<!-- Footer -->
+<footer>
+  <p>&copy; 2025 Curations by Neenu Sara. All rights reserved.</p>
+</footer>
+
+<!-- JavaScript -->
+<script>
+  function openOrderForm(element) {
+    const hamperName = element.getAttribute("data-hamper");
+    document.getElementById("hamper").value = hamperName;
+    document.querySelector("#place-order").scrollIntoView({ behavior: "smooth" });
+  }
+
+  const form = document.getElementById('orderForm');
+  const thankYouMessage = document.getElementById('thankYouMessage');
+
+  form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const formData = new FormData(form);
+    const response = await fetch(form.action, {
+      method: form.method,
+      body: formData,
+      headers: { 'Accept': 'application/json' }
+    });
+
+    if (response.ok) {
+      form.reset();
+      form.style.display = 'none';
+      thankYouMessage.style.display = 'block';
+    } else {
+      alert('There was a problem sending your order. Please try again later.');
+    }
+  });
+</script>
+
+
+</body>
+</html>
