@@ -310,28 +310,52 @@ footer {
 }
 
 /* REVIEWS SECTION */
-.reviews-section {
-  background-color: #fff3e0;
-  text-align: center;
-  padding: 50px 20px;
-}
-
-.review-cards {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 25px;
-  margin-top: 20px;
-}
-
-.review-card {
+/* WRITE REVIEW BOX */
+.write-review-box {
   background-color: #fff8f0;
-  padding: 20px;
+  margin-top: 40px;
+  padding: 30px;
   border-radius: 15px;
-  max-width: 300px;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-  font-style: italic;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
 }
+
+.write-review-box form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.write-review-box input,
+.write-review-box textarea,
+.write-review-box select {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #d35400;
+  font-size: 1rem;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.write-review-box button {
+  background-color: #d35400;
+  color: #fff;
+  border: none;
+  padding: 12px;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.3s;
+}
+
+.write-review-box button:hover {
+  background-color: #e67e22;
+  transform: scale(1.05);
+}
+
 
 /* COMING SOON SECTION */
 .coming-soon-section {
