@@ -164,10 +164,13 @@
   </section>
 
 
+
 <!-- Customer Reviews -->
 <section id="reviews" class="reviews-section">
   <h2>✨ What Our Customers Say</h2>
-  <div class="review-cards">
+  
+  <!-- Existing Reviews -->
+  <div id="reviewList" class="review-cards">
     <div class="review-card">
       <p>"The hamper was beautifully curated and delivered right on time! Loved it!" – Priya</p>
     </div>
@@ -178,7 +181,28 @@
       <p>"Amazing customization options and service. Highly recommend!" – Anumon</p>
     </div>
   </div>
+
+  <!-- Write Your Review -->
+  <div class="write-review-box">
+    <h3>💬 Write Your Review</h3>
+    <p>We’d love to hear from you!</p>
+
+    <form id="addReviewForm">
+      <input type="text" id="reviewerName" placeholder="Your Name" required>
+      <select id="reviewRating" required>
+        <option value="">Select Rating</option>
+        <option value="⭐️⭐️⭐️⭐️⭐️">⭐️⭐️⭐️⭐️⭐️ Excellent</option>
+        <option value="⭐️⭐️⭐️⭐️">⭐️⭐️⭐️⭐️ Great</option>
+        <option value="⭐️⭐️⭐️">⭐️⭐️⭐️ Good</option>
+        <option value="⭐️⭐️">⭐️⭐️ Fair</option>
+        <option value="⭐️">⭐️ Poor</option>
+      </select>
+      <textarea id="reviewText" placeholder="Write your review here..." required></textarea>
+      <button type="submit">Submit Review</button>
+    </form>
+  </div>
 </section>
+
 
 <!-- Coming Soon Christmas Preorders -->
 <section id="coming-soon" class="coming-soon-section">
@@ -248,6 +272,31 @@
     }
   });
 </script>
+<script>
+  const addReviewForm = document.getElementById('addReviewForm');
+  const reviewList = document.getElementById('reviewList');
+
+  addReviewForm.addEventListener('submit', (e) => {
+    e.preventDefault();
+    
+    const name = document.getElementById('reviewerName').value.trim();
+    const rating = document.getElementById('reviewRating').value;
+    const text = document.getElementById('reviewText').value.trim();
+
+    if (name && text) {
+      const newReview = document.createElement('div');
+      newReview.classList.add('review-card');
+      newReview.innerHTML = `<p>"${text}" – ${name} ${rating}</p>`;
+      
+      reviewList.appendChild(newReview);
+      addReviewForm.reset();
+      
+      // Optional: scroll to the new review
+      newReview.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    }
+  });
+</script>
+
 
 
 </body>
